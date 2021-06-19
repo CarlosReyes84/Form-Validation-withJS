@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/076bbceb7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <header class="header">
+            <h2>Create Account</h2>
+            <div class="line"></div>
+        </header>
+        <form class="form" id="form">
+            <div class="form-control" id="form-control">
+                <label for="name">Username</label>
+                <input type="text" id="name" placeholder="Carlos">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small class="small">Name required :(</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="hola@gmail.com">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small class="small"> Invalid e-mail :(</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small class="small">Password required</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password-check">Pasword Check</label>
+                <input type="password" id="password-check" placeholder="Password Validation">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small class="small">Should be the same password</small>
+            </div>
+
+            <button>SUBMIT</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    display: grid;
+    place-items: center;
+    background-color: #9b59b6;
+    font-family: 'Public Sans', sans-serif;
+    height: 100vh;
+}
+.container {
+    background-color: white;
+    width: 400px;
+    padding: .5rem;
+}
+@media(max-width: 400px) {
+    .container {
+        width: 345px;
+    }
+}
+.form {
+    padding: 1rem;
+}
+.header {
+    position: relative;
+    padding: 1rem 1rem;
+}
+.header .line {
+    background-color: #9b59b6;
+    height: .2rem;
+    width: 8rem;
+    position: absolute;
+    bottom: .6rem;
+}
+.form-control {
+    margin-bottom: .5rem;
+    position: relative;
+    padding: 1rem 0rem;
+}
+.form-control label {
+    display: inline-block;
+    margin-bottom: .7rem;
+    font-size: 1.1rem;
+}
+
+.form-control input {
+    display: block;
+    padding: .7rem;
+    font-size: .9rem;
+    width: 100%;
+    border: 3px solid #f0f0f0;
+    border-radius: .3rem;
+}
+
+.form-control input:focus {
+    border-color: #777;
+    outline: none;
+}
+.form-control i {
+    position: absolute;
+    right: 1rem;
+    top: 3.8rem;
+    visibility: hidden;
+}
+.form-control small {
+    position: absolute;
+    color: #e74c3c;
+    right: 0;
+    visibility: hidden;
+}
+.form button {
+    margin-top: 1rem;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #8e44ad;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+/**tiene mas prioridad porque le estoy diciendo que con 2 clases, quiere decir que si se encuentra con esa clase extra agregale lo que pusimos al input**/
+.form-control.success input{
+    border-color: green;
+    visibility: visible;
+}
+.form-control.success .fa-check-circle{
+    visibility: visible;
+    color: green;
+}
+.form-control.error input {
+    border-color: red;
+    visibility: visible;
+}
+.form-control.error .fa-exclamation-circle {
+    visibility: visible;
+    color: red;
+}
+.form-control.error small {
+    visibility: visible;
+}
+
+/*EN CONCLUSION SI TAL ETIQUETA YA TIENE UN VALOR ASIGNADO PERO QUEREMOS CAMBIARLE ALGO AL HACER UNA ACCION TENEMOS QUE AGREGARLE MAS HERENCIA, NO FUNCIONARA SI SOLO LE AGREGAMOS UN DIFRENTE VALOR CON UNA SOLO CLASE A MENOS DE QUE NO TENGA UN VALOR YA ESTABLECIDO*/
+
+/*esas clases van a ser añadidas con javascript al form-control*/
+
+
+.mensajeFinal {
+    background-color: rgb(27, 126, 27);
+    padding: 1rem;
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+}
